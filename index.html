@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Les controverses du numérique</title>
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header-inner">
+        <a class="brand" href="#Accueil">Controverses IA</a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+        <nav aria-label="Navigation principale">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#Accueil">Accueil</a></li>
+                <li><a href="#Definition">L'IA</a></li>
+                <li><a href="#Frise">Frise</a></li>
+                <li><a href="#Acteurs">Acteurs</a></li>
+                <li><a href="#Avancee">Avancée</a></li>
+                <li><a href="#Frein">Frein</a></li>
+                <li><a href="#Retenir">Bilan</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero" id="Accueil">
+        <div class="hero-text">
+            <h1>L'IA générative : progrès pour les créateurs ou menace pour les artistes ?</h1>
+            <p>Une image, un texte ou une musique en quelques secondes : l'IA générative bouleverse la création. Elle ouvre de nouvelles possibilités, mais inquiète ceux qui vivent de leur art. Pourquoi cette technologie divise-t-elle autant ?</p>
+            <button class="btn-savoir-plus" id="btn-savoir-plus">En savoir plus</button>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+            <svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#0e3b2e"/><stop offset=".6" stop-color="#25587a"/><stop offset="1" stop-color="#a9c6ea"/>
+                    </linearGradient>
+                    <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stop-color="#79cf4b" stop-opacity="0"/><stop offset="1" stop-color="#79cf4b"/>
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="420" fill="url(#sky)"/>
+                <circle cx="450" cy="120" r="46" fill="#e4f6d9" opacity=".9"/>
+                <g fill="#0e3b2e">
+                    <rect x="20" y="250" width="50" height="170"/><rect x="80" y="200" width="40" height="220"/>
+                    <rect x="130" y="270" width="60" height="150"/><rect x="200" y="220" width="45" height="200"/>
+                    <rect x="260" y="280" width="55" height="140"/><rect x="330" y="240" width="40" height="180"/>
+                    <rect x="385" y="290" width="60" height="130"/><rect x="460" y="230" width="50" height="190"/>
+                    <rect x="525" y="270" width="60" height="150"/>
+                </g>
+                <path d="M0 380 C180 380 260 300 420 250 S560 190 600 170" fill="none" stroke="url(#trail)" stroke-width="14" stroke-linecap="round"/>
+                <path d="M0 395 C190 395 280 320 430 275 S560 215 600 200" fill="none" stroke="#e4f6d9" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+            </svg>
+        </div>
+    </section>
+
+<main class="page">
+<div class="section-controls" hidden>
+    <button id="open-all" type="button"></button>
+    <button id="close-all" type="button"></button>
+</div>
+
+<details class="section" id="Definition" open>
+    <summary><h2>Qu'est-ce que l'IA ?</h2></summary>
+    <div class="section-body">
+        <p>L'intelligence artificielle (IA) désigne l'ensemble des techniques qui permettent à un ordinateur d'accomplir des tâches que l'on attend habituellement d'un être humain : comprendre une phrase, reconnaître un visage sur une photo ou apprendre à partir d'exemples. L'expression est née en 1956.</p>
+
+        <h3>L'IA générative</h3>
+        <p>L'IA générative est une IA capable de créer du contenu : un texte, une image, une musique ou une vidéo. Il suffit de lui décrire ce que l'on souhaite en une phrase, appelée « prompt », pour qu'elle propose un résultat.</p>
+
+        <p>Il existe désormais un outil pour presque chaque forme de création : ChatGPT rédige des textes et répond aux questions, Midjourney transforme une description en image, Sora produit de courtes vidéos et Suno compose des chansons.</p>
+
+        <h3>Comment ça marche ?</h3>
+        <p>Pour apprendre, ces outils analysent d'immenses quantités de textes, d'images et de sons déjà publiés. Ils y repèrent des régularités, puis s'en servent pour produire du contenu inédit. Ils peuvent toutefois se tromper : ils imitent ce qu'ils ont observé sans réellement comprendre ce qu'ils fabriquent.</p>
+
+        <p>Or, parmi les œuvres utilisées pour cet entraînement, certaines sont protégées par le droit d'auteur, et leurs créateurs n'ont pas toujours donné leur accord. C'est ce débat que nous allons explorer.</p>
+    </div>
+</details>
+
+<details class="section" id="Frise">
+    <summary><h2>Une frise pour se situer</h2></summary>
+    <div class="section-body">
+        <div class="frise-card">
+            <p class="frise-hint">De la naissance de l'IA en 1956 aux films générés en 2026, dix dates qui montrent comment Internet et les réseaux sociaux ont préparé l'arrivée de l'IA générative, puis les débats qu'elle suscite.</p>
+            <div class="frise-viewport" id="frise-viewport"><div class="frise-scroller" id="frise-scroller"><div class="frise" id="frise"><div class="rows" id="frise-rows"></div></div></div></div>
+        </div>
+    </div>
+</details>
+
+<details class="section" id="Acteurs" open>
+    <summary><h2>Les acteurs de la controverse</h2></summary>
+    <div class="section-body">
+        <p class="acteurs-intro">Cinq personnalités, cinq légitimités différentes : économique, politique, technique, éthique et juridique. Leur statut donne du poids à leur avis.</p>
+        <div class="acteurs-grid" id="acteurs-grid"></div>
+    </div>
+</details>
+
+<details class="section" id="Avancee">
+    <summary><h2>Une avancée technologique pour les créateurs</h2></summary>
+    <div class="section-body"><p>L'intelligence artificielle générative est perçue par de nombreux acteurs du secteur technologique et certains artistes comme une révolution comparable à l'invention de la photographie. Pour des figures comme Sam Altman (OpenAI) ou David Holz (Midjourney), l'IA n'a pas vocation à remplacer l'humain, mais agit comme un véritable moteur d'imagination, permettant de repousser les limites de la créativité. Elle démocratise l'accès à l'expression visuelle, offrant à quiconque la possibilité de matérialiser des idées complexes sans nécessiter d'années de maîtrise technique.</p>
+        <p>Des pionniers de l'art numérique, à l'image de Refik Anadol, considèrent les algorithmes et les vastes bases de données comme de nouveaux « pigments ». L'IA devient alors un partenaire collaboratif qui permet d'explorer des territoires esthétiques inédits. De plus, des entreprises comme Adobe tentent de rassurer en intégrant ces technologies comme de simples prolongements des outils d'édition classiques, en promettant des modèles entraînés de manière éthique et « commercialement sûre ».</p></div>
+</details>
+
+<details class="section" id="Frein">
+    <summary><h2>Un frein voire déclin pour les artistes ?</h2></summary>
+    <div class="section-body"><p>À l'opposé, une vaste fronde s'organise pour dénoncer ce qui est perçu comme un pillage industriel à grande échelle. Des artistes et illustrateurs de premier plan, tels que Karla Ortiz ou Sarah Andersen, alertent sur le « scraping » : l'aspiration de milliards d'œuvres protégées par le droit d'auteur pour entraîner des modèles d'IA sans aucun consentement, crédit, ni compensation financière. Cette pratique menace directement la viabilité économique des métiers créatifs, entraînant une précarisation de la profession et un nivellement par le bas via la standardisation des styles.</p>
+        <p>Cette inquiétude est validée de l'intérieur par des lanceurs d'alerte issus de la Tech. Des figures comme Ed Newton-Rex (ancien VP chez Stability AI) ou Suchir Balaji (ancien chercheur chez OpenAI) ont démissionné avec fracas, dénonçant un modèle économique fondé sur une interprétation abusive du <em>fair use</em> (usage loyal). Ils estiment que la technologie actuelle détruit délibérément le gagne-pain des créateurs au profit d'une course effrénée à la performance.</p></div>
+</details>
+
+<details class="section" id="Retenir">
+    <summary><h2>Ce qu'il faut retenir</h2></summary>
+    <div class="section-body"><p>Le débat autour de l'IA générative ne se résume pas à une simple opposition binaire entre pro-technologie et technophobes. Il révèle une crise de transition profonde. Si l'IA offre des outils créatifs d'une puissance inédite, son modèle de développement actuel s'est construit au détriment des droits fondamentaux des artistes originaux.</p>
+        <p>La résolution de cette crise passera inévitablement par trois leviers. D'abord, le levier technologique défensif, avec des outils comme <em>Glaze</em> ou <em>Nightshade</em> (développés par le chercheur Ben Zhao) qui permettent aux artistes « d'empoisonner » leurs œuvres pour empêcher leur copie par les IA. Ensuite, le levier économique, avec l'émergence de labels de certification (comme <em>Fairly Trained</em>) pour valoriser les IA respectueuses du consentement. Enfin, le levier réglementaire, incarné par l'IA Act européen, qui vise à forcer la transparence des géants de la Tech et à restaurer un équilibre entre innovation algorithmique et protection de la propriété intellectuelle.</p></div>
+</details>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-cols">
+            <div class="footer-col">
+                <h4>Découvrir</h4>
+                <ul>
+                    <li><a href="#Accueil">Accueil</a></li>
+                    <li><a href="#Definition">Qu'est-ce que l'IA ?</a></li>
+                    <li><a href="#Frise">La frise chronologique</a></li>
+                    <li><a href="#Acteurs">Les acteurs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Le débat</h4>
+                <ul>
+                    <li><a href="#Avancee">Une avancée pour les créateurs</a></li>
+                    <li><a href="#Frein">Un frein pour les artistes ?</a></li>
+                    <li><a href="#Retenir">Ce qu'il faut retenir</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Repères clés</h4>
+                <ul>
+                    <li><a href="#Frise" data-frise="0">1956 : naissance de l'IA</a></li>
+                    <li><a href="#Frise" data-frise="5">2022 : arrivée de ChatGPT</a></li>
+                    <li><a href="#Frise" data-frise="7">2023 : propriété intellectuelle</a></li>
+                    <li><a href="#Frise" data-frise="8">2024 : l'AI Act européen</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Outils cités</h4>
+                <ul>
+                    <li><span>ChatGPT : textes</span></li>
+                    <li><span>Midjourney : images</span></li>
+                    <li><span>Sora : vidéos</span></li>
+                    <li><span>Suno : musique</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Les controverses du numérique</p>
+            <a href="#Accueil">Retour en haut ↑</a>
+        </div>
+    </div>
+</footer>
+
+<script src="frise.js"></script>
+<script src="acteurs.js"></script>
+<script src="site.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>
